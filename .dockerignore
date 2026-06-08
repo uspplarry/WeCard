@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+uploads/
+data/
+data.json
+.git
+.vscode

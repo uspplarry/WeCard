@@ -1,0 +1,15 @@
+services:
+  wecard:
+    build: .
+    container_name: wecard
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    environment:
+      - NODE_ENV=production
+      - ADMIN_USER=admin
+      - ADMIN_PASS=password
+      - SECRET_KEY=change_this_to_a_random_string_in_production
+    restart: unless-stopped

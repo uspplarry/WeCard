@@ -1,0 +1,8 @@
+{
+  "name": "WeCard",
+  "description": "A lightweight, responsive WeChat customer service contact and QR card management system, equipped with a ultra-low-memory compiled Go engine for stable Docker execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
