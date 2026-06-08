@@ -2,6 +2,7 @@ services:
   wecard:
     build: .
     container_name: wecard
+    network_mode: brigde
     ports:
       - "3000:3000"
     volumes:
@@ -13,3 +14,10 @@ services:
       - ADMIN_PASS=password
       - SECRET_KEY=change_this_to_a_random_string_in_production
     restart: unless-stopped
+    mem_limit: 64M
+    memswap_limit: 64M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
